@@ -2,15 +2,18 @@
     font-family: Arial, Helvetica, sans-serif; 
 }
 
+html {
+    scroll-behavior: smooth;
+  }
 /*BODY SECTION*/
 
 
 /*HERO SECTION*/
 .hero{
-    padding: 150px;
-    display:relative;
+    display:flex;
     justify-content:center;
-    align-items:center
+    align-items:center;
+    min-height: 100vh;
 }
 
 .hero-title{
@@ -52,7 +55,6 @@
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
-    z-index:1;
 }
 .visit-web{
     background-color: #00bcd4;
@@ -60,11 +62,120 @@
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
-    z-index:1;
+}
+
+/*PHOTO GALLERY SECTION*/
+.photo-gallery{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+.column {
+    flex: 25%;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.container{
+    position: relative;
+}
+
+.img-desc{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: black;
+}
+
+.container:hover .img-desc {
+    opacity: 0.5;
+  }
+
+.text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 100%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 
+
+/*
+.img-placeholder{
+    display:flex;
+    margin: 10px;
+    padding: 20px;
+}
+
+img{
+    float:left;
+    height:100%;
+    opacity:50%;
+    zoom:200%;
+    z-index: 1030;
+    object-fit: cover;
+    object-position: 80% 100%;
+}*/
+
+@media screen and (max-height: 700px) {
+    img{
+        padding-right:500px;
+    }
+  }
+
+/*REFERENCES SECTION*/
+.references{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 20vh;
+}
+
 /*NAVIGATION BAR*/
+.navbar{
+    position: fixed;
+    z-index: 1040;
+}
 .nav{
     height: 100%;
     width: 0;
@@ -117,10 +228,12 @@
 
 /*FOOTER SECTION*/
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: relative;
+    margin-top: -50px;
     width: 100%;
+    height: 5rem;
+    left: 0;
+    bottom: 0;    
     background-color: red;
     color: white;
     text-align: center;
