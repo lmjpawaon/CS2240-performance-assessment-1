@@ -13,7 +13,7 @@
         <script type="text/javascript" src="script/script.js"></script>
         <!--font awesome js file-->
         <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
-
+        
     </head>
     <!--body of the page-->
         <body>
@@ -28,11 +28,11 @@
                 <section class="navbar">
                     <div class="nav" id="overlay">
                         <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-                        <div class="nav-content">
-                            <a href="#photo-gallery">PHOTO GALLERY</a>
+                        <div class="nav-content" onclick="closeNav()">
+                            <a href="#photo-gal">PHOTO GALLERY</a>
                             <a href="http://www.fernandocamorsolo.com/">VISIT OFFICIAL WEBSITE</a>
                             <a href="#hero">ABOUT</a>
-                            <a href="#references">REFERENCES</a>
+                            <a href="#refer">REFERENCES</a>
                             <a href="https://github.com/lmjpawaon/CS2240-performance-assessment-1">GITHUB REPOSITORY</a>
                         </div>
                     </div>
@@ -40,9 +40,9 @@
                 </section>
 
                 <!--hero section-->
-                <section class="hero">                 
+                <section id="hero" class="hero">                 
                         <div class="hero-content">
-                            <h1 class="hero-title">The Grand Old Man</h1>
+                            <h1 class="hero-title">The Grand Old Man of Philippine Art</h1>
                             <h2 class="hero-subhead">(May 30, 1892 – April 24, 1972)</h2>
                             <div class="hero-desc">
                             <p>Renowned as the First Contemporary Filipino Artist, Amorsolo painted the Philippine landscape in sunny and colorful depictions that idealized both 
@@ -51,20 +51,81 @@
                                 of the "Philippine Sun."</p>
                             </div>
                             <div class="hero-btn">
-                                <button class="photo-gal">Start Photo Gallery</button>
+                                <button class="photo-gal"><a href="#photo-gal">Start Photo Gallery</a></button>
                                 <button class="visit-web"><a href="http://www.fernandocamorsolo.com/">Visit Official Website</a></button>
-                            </div>
-                            <!--
-                            <div class="hero-img">
-                                <img src="assets/img/fernandoamorsolo.png">
-                            </div>
-                            -->
+                            </div>                           
                         </div>
                 </section>
 
-               
-            <section class="photo-gallery">Hello</section>
-            <section class="references">Hello</section>
+                <hr>
+
+            <!--photo gallery section-->
+            <section id="photo-gal" class="photo-gallery js-scroll-trigger">
+                <div class="gallery">
+                    <div class="row">
+                        <div class="column">
+                            <div class="container">
+                                <img src="assets/img/afternoonmealofriceworkers.jpg" alt="Afternoon Meal of Rice Workers">
+                                    <div class="img-desc">
+                                        <div class="text">
+                                            <h4 class="painting-title">Afternoon Meal of the Rice Workers (1958)</h4>
+                                            <p class="painting-specs">Oil on Canvas 22” x 30”</p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="container">
+                                <img src="assets/img/bombingofintendecia.jpg" alt="Bombing of Intendencia">
+                                <div class="img-desc">
+                                    <div class="text">
+                                        <h4 class="painting-title">Bombing of the Intendencia (1942)</h4>
+                                        <p class="painting-specs">Oil on Canvas 17.48" x 25.75"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/img/burningofidol.jpg" alt="Burning of Idol">
+                            <img src="assets/img/burningofmanila.jpg" alt="Burning of Manila">
+                            <img src="assets/img/princessurduja.jpeg" alt="Princess Urduja"> 
+                        </div>
+                        <div class="column">
+                            <div class="container">
+                                <img src="assets/img/dalagangbukid.jpg" alt="Dalagang Bukid">
+                                <div class="img-desc">
+                                    <div class="text">
+                                        <h4 class="painting-title">Dalagang Bukid (Girl with Banga) (1937)</h4>
+                                        <p class="painting-specs">Oil on Canvas 24" x 19"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/img/onthewayhome.jpeg" alt="On the Way Home">
+                            <img src="assets/img/palaymaiden.jpg" alt="Palay Maiden">
+                            <img src="assets/img/constructionofintramuros.jpg" alt="Contstruction of Intramuros">
+                        </div>
+                        <div class="column">
+                            <img src="assets/img/sunrise.jpg" alt="Sunrise">
+                            <img src="assets/img/theexplosion.jpg" alt="The Explosion">
+                            <img src="assets/img/thefruitgatherer.jpg" alt="The Fruit Gatherer">
+                            <img src="assets/img/underthemangotree.jpg" alt="Under the Mango Tree">
+                            <img src="assets/img/riceplanting.jpg" alt="Rice Planting">
+                            <img src="assets/img/workinginthefield.jpg" alt="Working in the Field">
+                        </div>
+                    </div>
+                    <!--
+                        <div class="column-side">
+                            <div class="img-placeholder">
+                                <img src="./assets/img/fernandoamorsolo.png">
+                            </div>
+                        </div>
+                    <div class="list-grid-btn">
+                        <button class="list-btn" onclick="listView()">List View</button>
+                        <button class="grid-btn" onclick="gridView()">Grid View</button>
+                    </div>-->
+                </div>
+                
+            </section>
+
+
+            <hr>
+            <section id="refer" class="references">Hello</section>
 
             
             </main>
