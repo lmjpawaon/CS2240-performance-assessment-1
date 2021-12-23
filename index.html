@@ -3,26 +3,74 @@
 <html>
     <head>
     <!--title of the page-->
-        <title>PAWAON - CS2240 Performance Assessment 1</title>
+        <title>PAWAON - CS2240 Performance Assessment #1</title>
         <!--meta data for the page-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--css file for the page-->
-        <link rel="stylesheet" src=./styles.css>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <!--js file for simple animation-->
+        <script type="text/javascript" src="script/script.js"></script>
+        <!--font awesome js file-->
+        <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+
     </head>
     <!--body of the page-->
         <body>
             <!--header of the page-->
             <header>
-
+                
             </header>
             <!--main section of the page-->
             <main>
 
+                <!--navbar-->
+                <section class="navbar">
+                    <div class="nav" id="overlay">
+                        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+                        <div class="nav-content">
+                            <a href="#photo-gallery">PHOTO GALLERY</a>
+                            <a href="http://www.fernandocamorsolo.com/">VISIT OFFICIAL WEBSITE</a>
+                            <a href="#hero">ABOUT</a>
+                            <a href="#references">REFERENCES</a>
+                            <a href="https://github.com/lmjpawaon/CS2240-performance-assessment-1">GITHUB REPOSITORY</a>
+                        </div>
+                    </div>
+                    <span class = "openBtn" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;Menu</span>
+                </section>
+
+                <!--hero section-->
+                <section class="hero">                 
+                        <div class="hero-content">
+                            <h1 class="hero-title">The Grand Old Man</h1>
+                            <h2 class="hero-subhead">(May 30, 1892 – April 24, 1972)</h2>
+                            <div class="hero-desc">
+                            <p>Renowned as the First Contemporary Filipino Artist, Amorsolo painted the Philippine landscape in sunny and colorful depictions that idealized both 
+                                nature and native beauty. Using techniques of natural outdoor lighting and taking from the Impressionists of Europe, 
+                                he mastered the skill of natural lighting in his paintings, and this trademark was later called his mastery 
+                                of the "Philippine Sun."</p>
+                            </div>
+                            <div class="hero-btn">
+                                <button class="photo-gal">Start Photo Gallery</button>
+                                <button class="visit-web"><a href="http://www.fernandocamorsolo.com/">Visit Official Website</a></button>
+                            </div>
+                            <!--
+                            <div class="hero-img">
+                                <img src="assets/img/fernandoamorsolo.png">
+                            </div>
+                            -->
+                        </div>
+                </section>
+
+               
+            <section class="photo-gallery">Hello</section>
+            <section class="references">Hello</section>
+
+            
             </main>
             <!--footer of the page-->
             <footer>
-                
+                Footer
             </footer>
 
         </body>
