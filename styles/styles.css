@@ -1,10 +1,10 @@
 :root{
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Lato, Spartan;
 }
 
 html {
     scroll-behavior: smooth;
-  }
+}
 /*BODY SECTION*/
 
 
@@ -15,7 +15,6 @@ html {
     align-items:center;
     min-height: 100vh;
 }
-
 .hero-title{
     margin: 0px 50px 0px 100px;
     font-size: 50px;
@@ -121,41 +120,10 @@ html {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 100%;
-    }
+.painting-title{
+    font-weight: bold;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
-
-
-/*
-.img-placeholder{
-    display:flex;
-    margin: 10px;
-    padding: 20px;
-}
-
-img{
-    float:left;
-    height:100%;
-    opacity:50%;
-    zoom:200%;
-    z-index: 1030;
-    object-fit: cover;
-    object-position: 80% 100%;
-}*/
 
 @media screen and (max-height: 700px) {
     img{
@@ -217,7 +185,36 @@ img{
     font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
+
+/*FOOTER SECTION*/
+footer {
+    position: sticky;
+    width: 100%;
+    height: 5rem;
+    left: 0;
+    bottom: 0;    
+    background-color: white;
+    color: black;
+    text-align: center;
+ }
+
+ .name{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ }
+
+.socials{
+    display:flex;
+    justify-content:space-evenly;
+}
+/*
+ .socials{
+    text-align: right;
+ }
+*/
+ /*MEDIA QUERIES*/
+ @media screen and (max-height: 450px) {
     .nav a {font-size: 20px}
     .nav .closeBtn {
     font-size: 40px;
@@ -226,15 +223,18 @@ img{
     }
   }
 
-/*FOOTER SECTION*/
-footer {
-    position: relative;
-    margin-top: -50px;
-    width: 100%;
-    height: 5rem;
-    left: 0;
-    bottom: 0;    
-    background-color: red;
-    color: white;
-    text-align: center;
- }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 100%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
