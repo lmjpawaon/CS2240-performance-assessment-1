@@ -8,6 +8,8 @@
 
 html {
     scroll-behavior: smooth;
+    min-height: 100vh;
+    background-color:var(--intellectual-grey);
 }
 
 /*BODY SECTION*/
@@ -19,10 +21,10 @@ html {
     justify-content:center;
     align-items:center;
     min-height: 100vh;
-    background-image: url(../assets/img/fernandoamorsolo.png);
+    background-image: url(../assets/img/firstbg.png);
     background-repeat: no-repeat;
-    background-position: right center;
-    background-size: contain;
+    background-position: center;
+    background-size: 100%;
 }
 
 .amorsolo{
@@ -35,12 +37,14 @@ html {
     font-size: 50px;
     font-weight: bold;
     z-index:100;
+    color:var(--light-gold);
 }
 
 .hero-subhead{
     margin: 0px 50px 0px 100px;
     font-size: 25px;
     font-weight: bold;
+    color:var(--dark-gold);
 }
 
 .hero-desc{
@@ -50,6 +54,7 @@ html {
     display:flex;
     justify-content:center;
     align-items:center;
+    color:#EAEAEA;
 }
 
 .hero-btn{
@@ -85,8 +90,13 @@ html {
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height: 100vh;    
+    min-height: 100vh;
+    background-image: url(../assets/img/2ndbg.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 100%;
 }
+
 
 .portraitFA{
     align-items:center;
@@ -96,6 +106,11 @@ html {
     align-items:center;
     border-radius: 50%;
     width: 5%;
+    border: 3px solid var(--light-gold);
+}
+
+.intro{
+    color:var(--light-grey);
 }
 
 .row {
@@ -154,12 +169,6 @@ html {
 
 /*************************************/
 
-@media screen and (max-height: 700px) {
-    img{
-        padding-right:500px;
-    }
-  }
-
 /*REFERENCES SECTION*/
 .references{
     display:flex;
@@ -171,9 +180,6 @@ html {
 /*************************************/
 
 /*NAVIGATION BAR*/
-.navbar{
-    z-index: 1040;
-}
 .nav{
     height: 100%;
     width: 0;
@@ -215,6 +221,10 @@ html {
     font-size: 60px;
 }
 
+.openBtn{
+    color:#EAEAEA;
+}
+
 /*************************************/
 
 /*FOOTER SECTION*/
@@ -224,7 +234,6 @@ footer {
     height: 5rem;
     left: 0;
     bottom: 0;    
-    background-color: white;
     color: black;
     text-align: center;
  }
@@ -233,6 +242,7 @@ footer {
     display:flex;
     justify-content:center;
     align-items:center;
+    color:var(--light-grey);
  }
 
 .socials{
@@ -262,6 +272,17 @@ footer {
         flex: 50%;
         max-width: 50%;
     }
+    .portrait{
+        width: 15%;
+    }
+    /*dle pa final ambot*/
+    .nav a {font-size: 20px}
+    .nav .closeBtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -271,3 +292,9 @@ footer {
         max-width: 100%;
     }
 }
+
+@media screen and (max-height: 700px) {
+    img{
+        padding-right:500px;
+    }
+  }
