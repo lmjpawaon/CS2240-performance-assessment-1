@@ -20,28 +20,34 @@
     <!--body of the page-->
         <body>
             <main>
-                 <!--hero section and navbar-->
-                <section id="hero" class="hero"> 
-                    <div class="nav" id="overlay">
-                        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-                        <div class="nav-content" onclick="closeNav()">
-                            <a href="#photo-gal">PHOTO GALLERY</a>
-                            <a href="http://www.fernandocamorsolo.com/">VISIT OFFICIAL WEBSITE</a>
-                            <a href="#hero">ABOUT</a>
-                            <a href="Amorsolo_Masterpieces.txt">REFERENCES</a>
-                            <a href="https://github.com/lmjpawaon/CS2240-performance-assessment-1">GITHUB REPOSITORY</a>
-                        </div>
+
+                <!--navbar-->
+                <div class="nav" id="overlay">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+                    <div class="nav-content" onclick="closeNav()">
+                        <a href="#photo-gal">PHOTO GALLERY</a>
+                        <a href="http://www.fernandocamorsolo.com/">VISIT OFFICIAL WEBSITE</a>
+                        <a href="#hero">ABOUT</a>
+                        <a href="Amorsolo_Masterpieces.txt">REFERENCES</a>
+                        <a href="https://github.com/lmjpawaon/CS2240-performance-assessment-1">GITHUB REPOSITORY</a>
                     </div>
-                    <span class = "openBtn" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;Menu</span>                
+                </div>
+                <span class = "openBtn" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;Menu</span>  
+
+                 <!--hero section-->
+                <section id="hero" class="hero"> 
+                                  
                         <div class="hero-content">
                             <h1 class="hero-title">The Grand Old Man of Philippine Art</h1>
                             <h2 class="hero-subhead">(May 30, 1892 – April 24, 1972)</h2>
                             <div class="hero-desc">
-                            <p>Renowned as the First Contemporary Filipino Artist, Amorsolo painted the Philippine landscape in sunny and colorful depictions that idealized both 
+                                Renowned as the First Contemporary Filipino Artist, Amorsolo painted the Philippine landscape in sunny and colorful depictions that idealized both 
                                 nature and native beauty. Using techniques of natural outdoor lighting and taking from the Impressionists of Europe, 
                                 he mastered the skill of natural lighting in his paintings, and this trademark was later called his mastery 
-                                of the "Philippine Sun."</p>
+                                of the "Philippine Sun."
                             </div>
+                            <br>
+                            <br>
                             <div class="hero-btn">
                                 <button class="photo-gal"><a href="#photo-gal">Start Photo Gallery  <i class="fas fa-angle-double-down"></i></a></button>
                                 <button class="visit-web"><a href="http://www.fernandocamorsolo.com/">Visit Official Website</a></button>
@@ -49,187 +55,187 @@
                         </div>
                 </section>
 
-            <!--photo gallery section-->
-            <section id="photo-gal" class="photo-gallery">
-                <div class="gallery">
-                    <p class="portraitFA" align="center">
-                        <img class="portrait" src="./assets/img/FA_portrait.jpg" alt="Amorsolo Portrait">
-                    </p>
-                    <p class="intro" align="center">Below are the following masterpieces of Fernando Amorsolo throughout his life, which gained him fame and success in the industry of Art.</p>
-                        <div class="row">
-                            <div class="column">
-                                <div class="container">
-                                    <img src="assets/img/afternoonmealofriceworkers.jpg" alt="Afternoon Meal of Rice Workers">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">Afternoon Meal of the Rice Workers (1958)</h4>
-                                                <p class="painting-specs">Oil on Canvas 22” x 30”</p>
+                <!--photo gallery section-->
+                <section id="photo-gal" class="photo-gallery">
+                    <div class="gallery">
+                        <p class="portraitFA" align="center">
+                            <img class="portrait" src="./assets/img/FA_portrait.jpg" alt="Amorsolo Portrait">
+                        </p>
+                        <p class="intro" align="center">Below are the following masterpieces of Fernando Amorsolo throughout his life, which gained him fame and success in the industry of Art.</p>
+                            <div class="row">
+                                <div class="column">
+                                    <div class="container">
+                                        <img src="assets/img/afternoonmealofriceworkers.jpg" alt="Afternoon Meal of Rice Workers">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">Afternoon Meal of the Rice Workers (1958)</h4>
+                                                    <p class="painting-specs">Oil on Canvas 22” x 30”</p>
+                                                </div>
                                             </div>
-                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <img src="assets/img/bombingofintendecia.jpg" alt="Bombing of Intendencia">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">Bombing of the Intendencia (1942)</h4>
+                                                    <p class="painting-specs">Oil on Canvas 17.48" x 25.75"</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="container">
+                                        <img src="assets/img/burningofidol.jpg" alt="Burning of Idol">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">Burning of the Idols (1958)</h4>
+                                                    <p class="painting-specs">Lithograph 12”x 18”</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="container">
+                                        <img src="assets/img/burningofmanila.jpg" alt="Burning of Manila">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">Burning of Manila (1947)</h4>
+                                                    <p class="painting-specs">Oil on Canvas 10" x 16"</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="container">
+                                        <img src="assets/img/princessurduja.jpeg" alt="Princess Urduja"> 
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">Princess Urduja (1948)</h4>
+                                                    <p class="painting-specs">Oil on Canvas 22” x 17”</p>
+                                                </div>
+                                            </div>
+                                    </div>
                                 </div>
-                                <div class="container">
-                                    <img src="assets/img/bombingofintendecia.jpg" alt="Bombing of Intendencia">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">Bombing of the Intendencia (1942)</h4>
-                                                <p class="painting-specs">Oil on Canvas 17.48" x 25.75"</p>
+                                <div class="column">
+                                    <div class="container">
+                                        <img src="assets/img/dalagangbukid.jpg" alt="Dalagang Bukid">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">Dalagang Bukid (Girl with Banga) (1937)</h4>
+                                                    <p class="painting-specs">Oil on Canvas 24" x 19"</p>
+                                                </div>
                                             </div>
-                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <img src="assets/img/onthewayhome.jpeg" alt="On the Way Home">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">On the Way Home (1945)</h4>
+                                                    <p class="painting-specs">Oil on Canvas 12.25" x 15.75"</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="container">
+                                        <img src="assets/img/palaymaiden.jpg" alt="Palay Maiden">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">Palay Maiden (1920)</h4>
+                                                    <p class="painting-specs">Oil on Canvas</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="container">
+                                        <img src="assets/img/constructionofintramuros.jpg" alt="Contstruction of Intramuros">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">La Construccion de Intramuros (1955)</h4>
+                                                    <p class="painting-specs">Oil on Canvas 10" x 13"</p>
+                                                </div>
+                                            </div>
+                                    </div>
                                 </div>
-                                <div class="container">
-                                    <img src="assets/img/burningofidol.jpg" alt="Burning of Idol">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">Burning of the Idols (1958)</h4>
-                                                <p class="painting-specs">Lithograph 12”x 18”</p>
+                                <div class="column">
+                                    <div class="container">
+                                        <img src="assets/img/sunrise.jpg" alt="Sunrise">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">Sunrise (1958)</h4>
+                                                    <p class="painting-specs">Oil on Canvas 21" x 15.5"</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                </div>
-                                <div class="container">
-                                    <img src="assets/img/burningofmanila.jpg" alt="Burning of Manila">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">Burning of Manila (1947)</h4>
-                                                <p class="painting-specs">Oil on Canvas 10" x 16"</p>
+                                    </div>
+                                    <div class="container">
+                                        <img src="assets/img/theexplosion.jpg" alt="The Explosion">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">The Explosion (1944)</h4>
+                                                    <p class="painting-specs">Oil on Canvas 13" x 9.25"</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                </div>
-                                <div class="container">
-                                    <img src="assets/img/princessurduja.jpeg" alt="Princess Urduja"> 
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">Princess Urduja (1948)</h4>
-                                                <p class="painting-specs">Oil on Canvas 22” x 17”</p>
+                                    </div>
+                                    <div class="container">
+                                        <img src="assets/img/thefruitgatherer.jpg" alt="The Fruit Gatherer">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">The Fruit Gatherer (1950)</h4>
+                                                    <p class="painting-specs">Oil on Board 13.75" x 17.75"</p>
+                                                </div>
                                             </div>
-                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <img src="assets/img/underthemangotree.jpg" alt="Under the Mango Tree">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">Under the Mango Tree (1935)</h4>
+                                                    <p class="painting-specs">Oil on Canvas 24" x 36"</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="container">
+                                        <img src="assets/img/riceplanting.jpg" alt="Rice Planting">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">Rice Planting (1964)</h4>
+                                                    <p class="painting-specs">Oil on Canvas 27" x 40"</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="container">
+                                        <img src="assets/img/workinginthefield.jpg" alt="Working in the Field">
+                                            <div class="img-desc">
+                                                <div class="text">
+                                                    <h4 class="painting-title">Trabajo en el campo (Working in the Field) (1965)</h4>
+                                                    <p class="painting-specs">Oil on Canvas 18.13" x 24"</p>
+                                                </div>
+                                            </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="container">
-                                    <img src="assets/img/dalagangbukid.jpg" alt="Dalagang Bukid">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">Dalagang Bukid (Girl with Banga) (1937)</h4>
-                                                <p class="painting-specs">Oil on Canvas 24" x 19"</p>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="container">
-                                    <img src="assets/img/onthewayhome.jpeg" alt="On the Way Home">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">On the Way Home (1945)</h4>
-                                                <p class="painting-specs">Oil on Canvas 12.25" x 15.75"</p>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="container">
-                                    <img src="assets/img/palaymaiden.jpg" alt="Palay Maiden">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">Palay Maiden (1920)</h4>
-                                                <p class="painting-specs">Oil on Canvas</p>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="container">
-                                    <img src="assets/img/constructionofintramuros.jpg" alt="Contstruction of Intramuros">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">La Construccion de Intramuros (1955)</h4>
-                                                <p class="painting-specs">Oil on Canvas 10" x 13"</p>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="container">
-                                    <img src="assets/img/sunrise.jpg" alt="Sunrise">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">Sunrise (1958)</h4>
-                                                <p class="painting-specs">Oil on Canvas 21" x 15.5"</p>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="container">
-                                    <img src="assets/img/theexplosion.jpg" alt="The Explosion">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">The Explosion (1944)</h4>
-                                                <p class="painting-specs">Oil on Canvas 13" x 9.25"</p>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="container">
-                                    <img src="assets/img/thefruitgatherer.jpg" alt="The Fruit Gatherer">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">The Fruit Gatherer (1950)</h4>
-                                                <p class="painting-specs">Oil on Board 13.75" x 17.75"</p>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="container">
-                                    <img src="assets/img/underthemangotree.jpg" alt="Under the Mango Tree">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">Under the Mango Tree (1935)</h4>
-                                                <p class="painting-specs">Oil on Canvas 24" x 36"</p>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="container">
-                                    <img src="assets/img/riceplanting.jpg" alt="Rice Planting">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">Rice Planting (1964)</h4>
-                                                <p class="painting-specs">Oil on Canvas 27" x 40"</p>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="container">
-                                    <img src="assets/img/workinginthefield.jpg" alt="Working in the Field">
-                                        <div class="img-desc">
-                                            <div class="text">
-                                                <h4 class="painting-title">Trabajo en el campo (Working in the Field) (1965)</h4>
-                                                <p class="painting-specs">Oil on Canvas 18.13" x 24"</p>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </section>
+
+                <!--Relevant Information-->
+                <section class="personalData">
+                <div class="table">
+                    <table>
+                            <tr>
+                                <th>Full Name</th>
+                                <td>Fernando Amorsolo y Cuerto</td>
+                            </tr>
+                            <tr>
+                                <th>Birthday</th>
+                                <td>May 30, 1892</td>
+                            </tr>
+                            <tr>
+                                <th>Birthplace</th>
+
+                                <td>Paco, Manila, Captaincy General of the Philippines, Spanish Empire</td>
+                            </tr>
+                            <tr>
+                                <th>Death</th>
+                                <td>April 30, 1972, Quezon City, Philippines</td>
+                            </tr>
+                            <tr>
+                                <th>Awards</th>
+                                <td>Order of the National Artists of the Philippines</td>
+                            </tr>
+                    </table>
                 </div>
-            </section>
-
-            <!--Relevant Information-->
-            <section class="personalData">
-               <div class="table">
-                   <table>
-                        <tr>
-                            <th>Full Name</th>
-                            <td>Fernando Amorsolo y Cuerto</td>
-                        </tr>
-                        <tr>
-                            <th>Birthday</th>
-                            <td>May 30, 1892</td>
-                        </tr>
-                        <tr>
-                            <th>Birthplace</th>
-
-                            <td>Paco, Manila, Captaincy General of the Philippines, Spanish Empire</td>
-                        </tr>
-                        <tr>
-                            <th>Death</th>
-                            <td>April 30, 1972, Quezon City, Philippines</td>
-                        </tr>
-                        <tr>
-                            <th>Awards</th>
-                            <td>Order of the National Artists of the Philippines</td>
-                        </tr>
-                   </table>
-               </div>
-            </section>
+                </section>
 
             </main>
             <!--footer of the page-->

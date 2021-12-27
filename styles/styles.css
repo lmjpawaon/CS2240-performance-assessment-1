@@ -18,6 +18,7 @@ html {
 /*HERO SECTION*/
 .hero{
     display:flex;
+    flex-wrap: wrap;
     justify-content:center;
     align-items:center;
     min-height: 100vh;
@@ -27,13 +28,7 @@ html {
     background-size: 100%;
 }
 
-.amorsolo{
-    margin: 0px 50px 0px 100px;
-    z-index:-100;
-}
-
 .hero-title{
-    margin: 0px 50px 0px 100px;
     font-size: 50px;
     font-weight: bold;
     z-index:100;
@@ -42,7 +37,6 @@ html {
 }
 
 .hero-subhead{
-    margin: 0px 50px 0px 100px;
     font-size: 25px;
     font-weight: bold;
     color:var(--light-grey);
@@ -50,18 +44,14 @@ html {
 }
 
 .hero-desc{
-    margin: 0px 300px;
     text-align:justify;
+    width:500px;
     z-index:1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     color:#EAEAEA;
     animation: fadeInOnLoad ease 5s;
 }
 
 .hero-btn{
-    margin: 5px 300px;
     display:absolute;
 }
 
@@ -281,10 +271,17 @@ footer {
  @media all and (min-width: 768px) and (max-width: 1024px) { 
     .column {
         flex: 50%;
-        max-width: 50%;
+        max-width: 100%;
     }
     .portrait{
-        width: 15%;
+        width: 20%;
+    }
+    .hero{
+        flex-wrap: wrap;
+        background-size:150%;
+    }
+    .photo-gallery{
+        background-size:1000%
     }
  }
 
@@ -294,29 +291,42 @@ footer {
         flex: 100%;
         max-width: 100%;
     }
-    img{
-        padding-right:500px;
-    }
     .text{
         font-size: 15px;
+    }
+    .portrait{
+        width: 20%;
+    }
+    .hero{
+        flex-wrap: wrap;
+        background-size:150%;
+    }
+    .photo-gallery{
+        background-size:1000%
     }
 
 }
 
 /*PHONES*/
 @media all and (max-width: 480px) { 
-    /*placeholder
     .column {
         flex: 100%;
         max-width: 100%;
     }
-    img{
-        padding-right:500px;
+    .hero{
+        flex-wrap: wrap;
+        background-size:150%;
     }
-    .text{
-        font-size: 15px;
+    .portrait{
+        width: 20%;
     }
-    */
+    .hero-desc{
+        width: 350px;
+    }
+    .photo-gallery{
+       background-size:1000%
+    }
+
 }
 
 /*************************************/
