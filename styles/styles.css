@@ -38,13 +38,15 @@ html {
     font-weight: bold;
     z-index:100;
     color:var(--light-gold);
+    animation: fadeInOnLoad ease 1.5s;
 }
 
 .hero-subhead{
     margin: 0px 50px 0px 100px;
     font-size: 25px;
     font-weight: bold;
-    color:var(--dark-gold);
+    color:var(--light-grey);
+    animation: fadeInOnLoad ease 3s;
 }
 
 .hero-desc{
@@ -55,6 +57,7 @@ html {
     justify-content:center;
     align-items:center;
     color:#EAEAEA;
+    animation: fadeInOnLoad ease 5s;
 }
 
 .hero-btn{
@@ -96,7 +99,6 @@ html {
     background-position:center;
     background-size: 100%;
 }
-
 
 .portraitFA{
     align-items:center;
@@ -227,6 +229,23 @@ html {
 
 /*************************************/
 
+/*TABLE SECTION*/
+.table{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 20vh;
+}
+table{
+    border: 1px solid var(--light-gold);
+    color: var(--light-grey);
+    text-align:left;
+    padding: 10px;
+}
+th{
+    justify-content:space-evenly;
+}
+
 /*FOOTER SECTION*/
 footer {
     position: sticky;
@@ -257,17 +276,9 @@ footer {
 /*************************************/
 
  /*MEDIA QUERIES*/
- @media screen and (max-height: 450px) {
-    .nav a {font-size: 20px}
-    .nav .closeBtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-  }
 
-  /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+ /*TABLETS LANDSCAPE*/
+ @media all and (min-width: 768px) and (max-width: 1024px) { 
     .column {
         flex: 50%;
         max-width: 50%;
@@ -275,26 +286,47 @@ footer {
     .portrait{
         width: 15%;
     }
-    /*dle pa final ambot*/
-    .nav a {font-size: 20px}
-    .nav .closeBtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
+ }
 
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/*TABLETS*/
+@media all and (min-width: 480px) and (max-width: 768px) { 
     .column {
         flex: 100%;
         max-width: 100%;
     }
-}
-
-@media screen and (max-height: 700px) {
     img{
         padding-right:500px;
     }
-  }
+    .text{
+        font-size: 15px;
+    }
+
+}
+
+/*PHONES*/
+@media all and (max-width: 480px) { 
+    /*placeholder
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    img{
+        padding-right:500px;
+    }
+    .text{
+        font-size: 15px;
+    }
+    */
+}
+
+/*************************************/
+/*KEYFRAMING*/
+@keyframes fadeInOnLoad{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
