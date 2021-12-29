@@ -51,6 +51,10 @@ html {
     animation: fadeInOnLoad ease 5s;
 }
 
+iframe{
+    border: 2px solid var(--light-gold);
+}
+
 .hero-btn{
     display:absolute;
 }
