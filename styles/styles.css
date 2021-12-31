@@ -262,6 +262,17 @@ footer {
     display:flex;
     justify-content:space-evenly;
 }
+.go-top{
+    text-decoration: none;
+    color:white;
+}
+.scroll-top{
+    background-color:var(--light-gold);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
 
 #fb, #twt, #ln, #git{
     color: var(--light-gold)
