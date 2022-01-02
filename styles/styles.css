@@ -45,6 +45,7 @@ html {
 
 .hero-desc{
     text-align:justify;
+    text-shadow:2px 2px var(--intellectual-grey);
     width:500px;
     z-index:1;
     color:#EAEAEA;
@@ -105,6 +106,8 @@ iframe{
     border: 3px solid var(--light-gold);
 }
 
+
+
 .intro{
     color:var(--light-grey);
 }
@@ -129,6 +132,10 @@ iframe{
 
 .container{
     position: relative;
+}
+
+.masterpiece{
+    border: 2px solid var(--light-grey);
 }
 
 .img-desc{
