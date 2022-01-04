@@ -9,9 +9,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--css file for the page-->
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
-        <!--css file for google fonts-->
+        <!--css link for google fonts for fontfamily-->
         <link href='https://fonts.googleapis.com/css?family=Lato|Spartan' rel='stylesheet'>
-        <!--js file for simple animation-->
+        <!--js file for simple navbar animation-->
         <script type="text/javascript" src="script/script.js"></script>
         <!--font awesome js file-->
         <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
@@ -21,7 +21,8 @@
     </head>
     <!--body of the page-->
         <body>
-            <main>
+            <a class="go-top" href=#navbar><button id="gotop"><i class="fas fa-angle-double-up"></i></button></a>
+            <section id="navbar" class="navbar">
                 <!--navbar-->
                 <div class="nav" id="overlay">
                     <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
@@ -34,10 +35,12 @@
                     </div>
                 </div>
                 <span class = "openBtn" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;Menu</span>  
+            </section>
 
-                 <!--hero section-->
+            <header class="pageHead">
+                <!--hero section-->
                 <section id="hero" class="hero"> 
-                                  
+                                
                         <div class="hero-content">
                             <h1 class="hero-title">The Grand Old Man of Philippine Art</h1>
                             <h2 class="hero-subhead">(May 30, 1892 – April 24, 1972)</h2>
@@ -54,10 +57,12 @@
                             <br>
                             <div class="hero-btn">
                                 <button class="photo-gal"><a href="#photo-gal">Start Photo Gallery  <i class="fas fa-angle-double-down"></i></a></button>
-                                <button class="visit-web"><a href="http://www.fernandocamorsolo.com/">Visit Official Website</a></button>
                             </div>                     
                         </div>
                 </section>
+            </header>
+
+            <main>
                 <!--photo gallery section-->
                 <section id="photo-gal" class="photo-gallery">
                     <div class="gallery">
@@ -261,7 +266,6 @@
                             <a href="https://github.com/lmjpawaon">
                             <i id="git" class="fab fa-github"></i></a>
                     </div>
-                    <button class="scroll-top"><a class="go-top" href=#hero>SCROLL TO TOP <i class="fas fa-angle-double-up"></i></a></button>
                 </footer>
             </section>
         </body>
